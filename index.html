@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$100K Day Accelerator — Members Portal</title>
+  <title>Members Portal</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,11 +17,11 @@
           <path d="M10 20 L20 10 L30 20 L20 30 Z" fill="white"/>
           <circle cx="20" cy="20" r="4" fill="white" fill-opacity="0.6"/>
         </svg>
-        <span class="logo-text">$100K Day Accelerator</span>
+        <span class="logo-text" id="site-brand"></span>
       </div>
       <div class="header-text">
-        <h1 class="portal-title">Members Portal</h1>
-        <p class="portal-tagline">Every guide, tool, and framework you need — in one place.</p>
+        <h1 class="portal-title" id="site-title"></h1>
+        <p class="portal-tagline" id="site-tagline"></p>
       </div>
     </div>
   </header>
@@ -36,358 +36,155 @@
         </svg>
         <input type="text" id="search-input" class="search-input" placeholder="Search guides, prompts, frameworks..." />
       </div>
-      <nav class="pill-nav">
-        <a href="#offer-engine" class="pill">MDM</a>
-        <a href="#offer-engine" class="pill">Roadmap</a>
-        <a href="#offer-engine" class="pill">Model Builder</a>
-        <a href="#content-engine" class="pill">SCRIPT</a>
-        <a href="#content-engine" class="pill">WW / AA</a>
-      </nav>
+      <nav class="pill-nav" id="pill-nav"></nav>
     </div>
   </div>
 
   <!-- MAIN CONTENT -->
-  <main class="main-content" id="main-content">
-
-    <!-- START HERE -->
-    <section class="section" id="start-here">
-      <div class="section-header">
-        <h2 class="section-title">Start Here</h2>
-      </div>
-      <div class="card-grid">
-
-        <div class="card" data-tags="new members getting started">
-          <div class="card-label">New Members</div>
-          <h3 class="card-title">Getting Started</h3>
-          <p class="card-desc">Welcome. Download the guide and build checklist, then follow the onboarding path to launch your system.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">Build Checklist</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="ai marketing system workspace">
-          <div class="card-label">AI-Driven Marketing System</div>
-          <h3 class="card-title">AI Marketing System</h3>
-          <p class="card-desc">Build your complete AI-powered system. Download the workspace kit, follow the guide, and set it up step by step.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn link-btn--outline">Download Kit →</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- OFFER ENGINE -->
-    <section class="section" id="offer-engine">
-      <div class="section-header">
-        <h2 class="section-title">Offer Engine</h2>
-        <span class="engine-badge">Engine 1</span>
-        <a href="#" class="overview-link">Overview Guide →</a>
-      </div>
-      <div class="card-grid">
-
-        <div class="card" data-tags="million dollar message mdm offer">
-          <div class="card-label">Million Dollar Message (MDM)</div>
-          <h3 class="card-title">Million Dollar Message</h3>
-          <p class="card-desc">The core formula that makes strangers stop and pay attention. Your primary offer statement that drives every asset.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="product roadmap system stages steps">
-          <div class="card-label">Product Roadmap</div>
-          <h3 class="card-title">Product Roadmap</h3>
-          <p class="card-desc">Your unique 3-stage, 9-step system — the backbone of your offer, content, and lead magnet strategy.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="model builder pricing business model">
-          <div class="card-label">Model Builder</div>
-          <h3 class="card-title">Model Builder</h3>
-          <p class="card-desc">Choose your path, set pricing, and build the business model that supports your system and revenue targets.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CONTENT ENGINE -->
-    <section class="section" id="content-engine">
-      <div class="section-header">
-        <h2 class="section-title">Content Engine</h2>
-        <span class="engine-badge">Engine 2</span>
-        <a href="#" class="overview-link">Overview Guide →</a>
-      </div>
-      <div class="card-grid">
-
-        <div class="card" data-tags="lead magnet opt-in email list">
-          <div class="card-label">Lead Magnet</div>
-          <h3 class="card-title">Lead Magnet</h3>
-          <p class="card-desc">Turn your hot step into a tangible tool that gets the opt-in. One step, one outcome, paired with your core offer.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="script content framework copy persuasion">
-          <div class="card-label">SCRIPT Content Framework</div>
-          <h3 class="card-title">SCRIPT Framework</h3>
-          <p class="card-desc">6 blocks of core persuasion copy that power every content asset. Write once, use everywhere across your system.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="script vsl video sales letter slides">
-          <div class="card-label">SCRIPT VSL</div>
-          <h3 class="card-title">SCRIPT VSL</h3>
-          <p class="card-desc">Turn your SCRIPT into a video sales letter that converts strangers into customers from day one.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-            <a href="#" class="link-btn">Training Deck</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="enrollment amplifier conversion one-page">
-          <div class="card-label">Enrollment Amplifier</div>
-          <h3 class="card-title">Enrollment Amplifier</h3>
-          <p class="card-desc">The one-page document that converts more customers from every campaign you run. Pairs with all traffic sources.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="content blocks sales page email copy elements">
-          <div class="card-label">Content Blocks</div>
-          <h3 class="card-title">Content Blocks</h3>
-          <p class="card-desc">13 conversion elements that transform your SCRIPT into sales pages, workshops, courses, and email sequences.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="winning workshop live event conversion webinar">
-          <div class="card-label">Winning Workshop</div>
-          <h3 class="card-title">Winning Workshop</h3>
-          <p class="card-desc">Your live conversion event — teach the hot step, pitch the membership. Primary conversion mechanism.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-            <a href="#" class="link-btn">Framework PDF</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="authority amplifier video thank you page trust">
-          <div class="card-label">Authority Amplifier</div>
-          <h3 class="card-title">Authority Amplifier</h3>
-          <p class="card-desc">The video on your thank-you page that builds trust and drives to your next step. Pairs with your lead magnet.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="paid strategy session call close program">
-          <div class="card-label">Paid Strategy Session</div>
-          <h3 class="card-title">Paid Strategy Session</h3>
-          <p class="card-desc">The session framework for high-ticket members — sell the session, close the program on the call.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">Calibration Tool</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="membership engine retain members advocacy retention">
-          <div class="card-label">Membership Engine™</div>
-          <h3 class="card-title">Membership Engine™</h3>
-          <p class="card-desc">The system that retains members, builds momentum, and turns your best customers into advocates.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">Training Deck</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="content roadmap 250 pieces authority video email">
-          <div class="card-label">Content Roadmap</div>
-          <h3 class="card-title">Content Roadmap</h3>
-          <p class="card-desc">Map 250 pieces of authority content across your entire Product Roadmap — VSLs, authority content, and follow-up.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-            <a href="#" class="link-btn">Training Deck</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="copywriting 101 copy chief filters world class">
-          <div class="card-label">Copywriting 101</div>
-          <h3 class="card-title">Copywriting 101</h3>
-          <p class="card-desc">Master the 18-filter system that turns structured copy into world-class assets. AI-powered copy review.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn">Training Deck</a>
-            <a href="#" class="link-btn">AI Prompt</a>
-          </div>
-        </div>
-
-        <div class="card card--coming-soon" data-tags="ninja content sequence email nurture subscribers">
-          <div class="card-label">Ninja Content Sequence
-            <span class="badge-coming-soon">Coming Soon</span>
-          </div>
-          <h3 class="card-title">Ninja Content Sequence</h3>
-          <p class="card-desc">The 5-message email nurture sequence powered by your SCRIPT — turns subscribers into buyers automatically.</p>
-          <div class="card-links">
-            <span class="link-btn link-btn--disabled">Guide</span>
-            <span class="link-btn link-btn--disabled">AI Prompt</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- TRAFFIC ENGINE -->
-    <section class="section" id="traffic-engine">
-      <div class="section-header">
-        <h2 class="section-title">Traffic Engine</h2>
-        <span class="engine-badge engine-badge--muted">Engine 3 — Coming Soon</span>
-      </div>
-      <div class="card-grid">
-        <div class="card card--coming-soon" data-tags="traffic organic paid ads">
-          <div class="card-label">Traffic Engine
-            <span class="badge-coming-soon">Coming Soon</span>
-          </div>
-          <h3 class="card-title">Traffic Engine</h3>
-          <p class="card-desc">Organic and paid traffic systems to drive the right people into your system at scale.</p>
-          <div class="card-links">
-            <span class="link-btn link-btn--disabled">Guide</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI TRAINING & TOOLS -->
-    <section class="section" id="ai-tools">
-      <div class="section-header">
-        <h2 class="section-title">AI Training &amp; Tools</h2>
-        <span class="engine-badge engine-badge--ai">AI Resources</span>
-      </div>
-      <div class="card-grid">
-
-        <div class="card" data-tags="ai crash course tools mindset setup">
-          <div class="card-label">New AI Crash Course</div>
-          <h3 class="card-title">AI Crash Course</h3>
-          <p class="card-desc">Get up to speed with AI fast — the tools, the mindset, and the exact setup used inside your system.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Guide</a>
-            <a href="#" class="link-btn link-btn--outline">Automation Tools →</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FRAMEWORKS & TOOLS -->
-    <section class="section" id="frameworks">
-      <div class="section-header">
-        <h2 class="section-title">Frameworks &amp; Tools</h2>
-        <span class="engine-badge engine-badge--ref">Reference</span>
-      </div>
-      <div class="card-grid">
-
-        <div class="card" data-tags="calculator revenue projections conversion benchmarks">
-          <div class="card-label">Customer Engine Calculator</div>
-          <h3 class="card-title">Revenue Calculator</h3>
-          <p class="card-desc">Run your numbers — revenue projections, conversion benchmarks, and phase-specific targets for your model.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Calculator</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="funnel comparison 22 models revenue">
-          <div class="card-label">Funnel Comparison</div>
-          <h3 class="card-title">Funnel Comparison</h3>
-          <p class="card-desc">Compare 22 funnel models side by side — see which path generates the most revenue for your situation.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">Calculator</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="confirmation video framework registrants attendees">
-          <div class="card-label">Confirmation Video Framework</div>
-          <h3 class="card-title">Confirmation Video Framework</h3>
-          <p class="card-desc">The video sequence that converts registrants into attendees and reduces no-show rates.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">PDF</a>
-          </div>
-        </div>
-
-        <div class="card" data-tags="opt-in vsl framework lead magnet video">
-          <div class="card-label">Opt-In VSL Framework</div>
-          <h3 class="card-title">Opt-In VSL Framework</h3>
-          <p class="card-desc">The video sales letter framework for lead magnet opt-in pages that maximizes subscriber conversion.</p>
-          <div class="card-links">
-            <a href="#" class="link-btn">PDF</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- COACHING CTA -->
-    <div class="coaching-cta">
-      <div class="coaching-cta-inner">
-        <div>
-          <p class="coaching-cta-title">Get coaching on your assets</p>
-          <p class="coaching-cta-desc">Post your work in the community for live feedback from the coaching team.</p>
-        </div>
-        <a href="#" class="cta-btn">Go to Coaching Group →</a>
-      </div>
-    </div>
-
-  </main>
+  <main class="main-content" id="main-content"></main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© 2026 $100K Day Accelerator. Members only. Do not distribute.</p>
+    <p id="site-footer"></p>
   </footer>
 
-  <!-- SEARCH SCRIPT -->
+  <!-- Load content config first, then render -->
+  <script src="content.js"></script>
   <script>
-    const searchInput = document.getElementById('search-input');
-    const cards = document.querySelectorAll('.card');
 
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase().trim();
-      cards.forEach(card => {
-        const title = card.querySelector('.card-title')?.textContent.toLowerCase() || '';
-        const desc = card.querySelector('.card-desc')?.textContent.toLowerCase() || '';
-        const label = card.querySelector('.card-label')?.textContent.toLowerCase() || '';
-        const tags = card.dataset.tags || '';
-        const match = title.includes(query) || desc.includes(query) || label.includes(query) || tags.includes(query);
-        card.closest('.card') && (card.style.display = (!query || match) ? '' : 'none');
+    // ── Helpers ──────────────────────────────────────────────
+
+    function el(tag, cls, html) {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (html !== undefined) e.innerHTML = html;
+      return e;
+    }
+
+    function badgeClass(style) {
+      const map = { ai: 'engine-badge--ai', ref: 'engine-badge--ref', muted: 'engine-badge--muted' };
+      return 'engine-badge ' + (map[style] || '');
+    }
+
+    function linkClass(style) {
+      const map = { outline: 'link-btn link-btn--outline', disabled: 'link-btn link-btn--disabled' };
+      return map[style] || 'link-btn';
+    }
+
+    // ── Render site meta ─────────────────────────────────────
+
+    document.title = SITE.brand + ' — Members Portal';
+    document.getElementById('site-brand').textContent   = SITE.brand;
+    document.getElementById('site-title').textContent   = SITE.title;
+    document.getElementById('site-tagline').textContent = SITE.tagline;
+    document.getElementById('site-footer').textContent  = SITE.footer;
+
+    // ── Render nav pills ─────────────────────────────────────
+
+    const nav = document.getElementById('pill-nav');
+    NAV_PILLS.forEach(pill => {
+      const a = el('a', 'pill', pill.label);
+      a.href = pill.href;
+      nav.appendChild(a);
+    });
+
+    // ── Render sections & cards ──────────────────────────────
+
+    const main = document.getElementById('main-content');
+
+    SECTIONS.forEach(section => {
+      const sec = el('section', 'section');
+      sec.id = section.id;
+
+      // Section header
+      const hdr = el('div', 'section-header');
+      hdr.appendChild(el('h2', 'section-title', section.title));
+
+      if (section.badge) {
+        hdr.appendChild(el('span', badgeClass(section.badgeStyle).trim(), section.badge));
+      }
+
+      if (section.overviewLink) {
+        const ov = el('a', 'overview-link', 'Overview Guide →');
+        ov.href = section.overviewLink;
+        hdr.appendChild(ov);
+      }
+
+      sec.appendChild(hdr);
+
+      // Card grid
+      const grid = el('div', 'card-grid');
+
+      section.cards.forEach(card => {
+        const c = el('div', 'card' + (card.comingSoon ? ' card--coming-soon' : ''));
+        c.dataset.tags = card.tags || '';
+
+        // Label row
+        const labelRow = el('div', 'card-label', card.label);
+        if (card.comingSoon) {
+          labelRow.appendChild(el('span', 'badge-coming-soon', 'Coming Soon'));
+        }
+        c.appendChild(labelRow);
+
+        c.appendChild(el('h3', 'card-title', card.title));
+        c.appendChild(el('p',  'card-desc',  card.desc));
+
+        // Links
+        const linkRow = el('div', 'card-links');
+        card.links.forEach(link => {
+          const cls = linkClass(link.style);
+          if (link.style === 'disabled') {
+            linkRow.appendChild(el('span', cls, link.text));
+          } else {
+            const a = el('a', cls, link.text);
+            a.href = link.href;
+            linkRow.appendChild(a);
+          }
+        });
+        c.appendChild(linkRow);
+
+        grid.appendChild(c);
       });
 
-      // Hide empty sections
-      document.querySelectorAll('.section').forEach(section => {
-        const visibleCards = [...section.querySelectorAll('.card')].filter(c => c.style.display !== 'none');
-        section.style.display = visibleCards.length === 0 && query ? 'none' : '';
+      sec.appendChild(grid);
+      main.appendChild(sec);
+    });
+
+    // ── Render coaching CTA ──────────────────────────────────
+
+    const cta = el('div', 'coaching-cta');
+    const ctaInner = el('div', 'coaching-cta-inner');
+    const ctaText = el('div');
+    ctaText.appendChild(el('p', 'coaching-cta-title', COACHING_CTA.title));
+    ctaText.appendChild(el('p', 'coaching-cta-desc',  COACHING_CTA.desc));
+    const ctaBtn = el('a', 'cta-btn', COACHING_CTA.btnText);
+    ctaBtn.href = COACHING_CTA.btnHref;
+    ctaInner.appendChild(ctaText);
+    ctaInner.appendChild(ctaBtn);
+    cta.appendChild(ctaInner);
+    main.appendChild(cta);
+
+    // ── Search ───────────────────────────────────────────────
+
+    document.getElementById('search-input').addEventListener('input', function () {
+      const q = this.value.toLowerCase().trim();
+
+      document.querySelectorAll('.card').forEach(card => {
+        const text = [
+          card.querySelector('.card-title')?.textContent,
+          card.querySelector('.card-desc')?.textContent,
+          card.querySelector('.card-label')?.textContent,
+          card.dataset.tags,
+        ].join(' ').toLowerCase();
+        card.style.display = (!q || text.includes(q)) ? '' : 'none';
+      });
+
+      document.querySelectorAll('.section').forEach(sec => {
+        const visible = [...sec.querySelectorAll('.card')].some(c => c.style.display !== 'none');
+        sec.style.display = (!q || visible) ? '' : 'none';
       });
     });
-  </script>
 
+  </script>
 </body>
 </html>
